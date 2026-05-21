@@ -1,10 +1,279 @@
 <!DOCTYPE html>
-<html>
+<html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <title>UlurID</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Donasi</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family:'Poppins', sans-serif;
+    }
+
+    body{
+      background:#dfeee7;
+      min-height:100vh;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      padding:20px;
+    }
+
+    .container{
+      width:100%;
+      max-width:1200px;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:40px;
+    }
+
+    /* LEFT IMAGE */
+    .left-side{
+      flex:1;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+    }
+
+    .left-side img{
+      width:100%;
+      max-width:500px;
+    }
+
+    .login-box{
+      width:420px;
+      background:#fff;
+      padding:40px;
+      border-radius:8px;
+      box-shadow:0 4px 10px rgba(0,0,0,0.15);
+    }
+
+    .logo{
+      text-align:center;
+      margin-bottom:20px;
+    }
+
+    .logo h1{
+      color:#0c8c5b;
+      font-size:42px;
+      font-weight:700;
+    }
+
+    .welcome{
+      text-align:center;
+      color:#2d6b57;
+      margin-bottom:30px;
+      font-size:32px;
+      font-weight:600;
+    }
+
+    .form-group{
+      margin-bottom:18px;
+    }
+
+    .form-group label{
+      display:block;
+      margin-bottom:8px;
+      font-size:16px;
+      color:#333;
+    }
+
+    .form-group input{
+      width:100%;
+      padding:12px;
+      border:1px solid #ccc;
+      border-radius:6px;
+      outline:none;
+      font-size:15px;
+    }
+
+    .password-box{
+      position:relative;
+    }
+
+    .password-box i{
+      position:absolute;
+      right:15px;
+      top:50%;
+      transform:translateY(-50%);
+      color:#777;
+      cursor:pointer;
+    }
+
+    .checkbox{
+      display:flex;
+      align-items:center;
+      gap:10px;
+      margin-bottom:20px;
+      font-size:13px;
+      color:#4a67d6;
+    }
+
+    .btn{
+      width:100%;
+      background:#2f8a63;
+      color:white;
+      border:none;
+      padding:12px;
+      border-radius:6px;
+      font-size:16px;
+      font-weight:600;
+      cursor:pointer;
+      transition:0.3s;
+    }
+
+    .btn:hover{
+      background:#267552;
+    }
+
+    .divider{
+      display:flex;
+      align-items:center;
+      text-align:center;
+      margin:25px 0;
+      color:#777;
+      font-size:12px;
+    }
+
+    .divider::before,
+    .divider::after{
+      content:"";
+      flex:1;
+      border-bottom:1px solid #ccc;
+    }
+
+    .divider:not(:empty)::before{
+      margin-right:10px;
+    }
+
+    .divider:not(:empty)::after{
+      margin-left:10px;
+    }
+
+    .social-login{
+      display:flex;
+      gap:15px;
+    }
+
+    .social-btn{
+      flex:1;
+      border:1px solid #ccc;
+      padding:10px;
+      border-radius:4px;
+      background:white;
+      cursor:pointer;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      gap:10px;
+      transition:0.3s;
+    }
+
+    .social-btn:hover{
+      background:#f5f5f5;
+    }
+
+    .facebook{
+      color:#1877f2;
+    }
+
+    .google{
+      color:#db4437;
+    }
+
+    /* RESPONSIVE */
+    @media(max-width:900px){
+      .container{
+        flex-direction:column;
+      }
+
+      .login-box{
+        width:100%;
+        max-width:450px;
+      }
+
+      .left-side img{
+        max-width:350px;
+      }
+    }
+
+  </style>
 </head>
 <body>
-byfyfhfyfy
+
+  <div class="container">
+
+    <!-- LEFT IMAGE -->
+    <div class="left-side">
+      <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" alt="donasi">
+    </div>
+
+    <!-- RIGHT FORM -->
+    <div class="login-box">
+
+      <div class="logo">
+        <h1>ulur.id</h1>
+      </div>
+
+      <div class="welcome">
+        Selamat Datang
+      </div>
+
+      <form>
+
+        <div class="form-group">
+          <label>Email</label>
+          <input type="email">
+        </div>
+
+        <div class="form-group">
+          <label>Password</label>
+
+          <div class="password-box">
+            <input type="password">
+            <i class="bi bi-eye-fill"></i>
+          </div>
+        </div>
+
+        <div class="checkbox">
+          <input type="checkbox">
+          <span>Saya setuju syarat & ketentuan</span>
+        </div>
+
+        <button class="btn">Daftar</button>
+
+      </form>
+
+      <div class="divider">
+        ATAU MASUK DENGAN
+      </div>
+
+      <div class="social-login">
+
+        <button class="social-btn">
+          <i class="bi bi-facebook facebook"></i>
+          Facebook
+        </button>
+
+        <button class="social-btn">
+          <i class="bi bi-google google"></i>
+          Google
+        </button>
+
+      </div>
+
+    </div>
+
+  </div>
+
 </body>
 </html>
