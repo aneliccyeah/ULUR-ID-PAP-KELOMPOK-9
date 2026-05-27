@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Login - ulur.id</title>
+
+  <link rel="stylesheet" href="login.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+  <div class="container">
+
+    <!-- LEFT -->
+    <div class="left-section">
+      <img src="Gambar.png" alt="Ilustrasi Donasi" class="main-image">
+    </div>
+
+    <!-- RIGHT -->
+    <div class="login-box">
+
+      <div class="logo-area">
+        <img src="Logo.png" alt="Logo" class="logo">
+      </div>
+
+      <h2>Selamat Datang</h2>
+
+      <form id="loginForm">
+
+        <label>Email</label>
+        <input type="email" id="email">
+
+        <div class="password-top">
+          <label>Kata Sandi</label>
+          <a href="#">Lupa Kata Sandi</a>
+        </div>
+
+        <div class="password-box">
+          <input type="password" id="password">
+          <i class="fa-solid fa-eye-slash" id="togglePassword"></i>
+        </div>
+
+        <!-- MESSAGE -->
+        <p id="message"></p>
+
+        <button type="submit" class="login-btn">
+          Masuk
+        </button>
+
+      </form>
+
+      <div class="divider">
+        <span></span>
+        <p>ATAU MASUK DENGAN</p>
+        <span></span>
+      </div>
+
+      <div class="social-login">
+
+        <button class="social-btn">
+          <img src="Facebook.png" alt="Facebook">
+          Facebook
+        </button>
+
+        <button class="social-btn">
+          <img src="Google.png" alt="Google">
+          Google
+        </button>
+
+      </div>
+
+      <div class="register-link">
+        <p>Belum Punya akun?</p>
+        <a href="register.html">Daftar disini</a>
+      </div>
+
+    </div>
+
+  </div>
+
+  <script src="login.js"></script>
+</body>
+</html>
